@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LevelInput"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/R1C0"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/Star"
+        app:layout_constraintTop_toBottomOf="@+id/R0C0" />
+
+    <TextView
+        android:id="@+id/R1C1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/R1C0"
+        app:layout_constraintTop_toBottomOf="@+id/R0C1" />
+
+    <TextView
+        android:id="@+id/R1C2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/R1C1"
+        app:layout_constraintTop_toBottomOf="@+id/R0C2" />
+
+    <TextView
+        android:id="@+id/R1C3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/R1C2"
+        app:layout_constraintTop_toBottomOf="@+id/R0C3" />
+
+    <TextView
+        android:id="@+id/R0C1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/R0C0"
+        app:layout_constraintTop_toBottomOf="@+id/Tier" />
+
+    <TextView
+        android:id="@+id/R0C2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/R0C1"
+        app:layout_constraintTop_toTopOf="@+id/R0C1" />
+
+    <TextView
+        android:id="@+id/R0C3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/R0C2"
+        app:layout_constraintTop_toTopOf="@+id/R0C2" />
+
+    <TextView
+        android:id="@+id/R0C4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/R0C3"
+        app:layout_constraintTop_toTopOf="@+id/R0C3" />
+
+    <TextView
+        android:id="@+id/LvlInputLabel"
+        android:layout_width="115dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Input Level Here:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/LvlInput"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/LvlInputLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/RlsinputLabel"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:text="Input Number of Rolls Here:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LvlInputLabel" />
+
+    <EditText
+        android:id="@+id/RlsInput"
+        android:layout_width="210dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/RlsinputLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/CalcButton"
+        android:layout_width="286dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="104dp"
+        android:text="CALCULATE!"
+        app:layout_constraintEnd_toEndOf="@+id/R1C3"
+        app:layout_constraintStart_toEndOf="@+id/R1C0"
+        app:layout_constraintTop_toBottomOf="@+id/R1C2" />
+
+    <TextView
+        android:id="@+id/Star"
+        android:layout_width="34dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:text="Star"
+        app:layout_constraintBottom_toBottomOf="@+id/R1C0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/R0C0"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <TextView
+        android:id="@+id/R0C0"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/Star"
+        app:layout_constraintTop_toBottomOf="@+id/Tier" />
+
+    <TextView
+        android:id="@+id/R1C4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/R1C3"
+        app:layout_constraintTop_toBottomOf="@+id/R0C4" />
+
+    <TextView
+        android:id="@+id/Tier"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Tier"
+        app:layout_constraintEnd_toEndOf="@+id/R0C4"
+        app:layout_constraintStart_toStartOf="@+id/R0C1"
+        app:layout_constraintTop_toBottomOf="@+id/RlsinputLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>
